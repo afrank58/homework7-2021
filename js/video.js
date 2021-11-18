@@ -58,12 +58,13 @@ document.querySelector('#mute').addEventListener("click", function() {
 });	
 
 // NEED VOLUME TO PRINT IN CONSOLE BUT NOT WORKING
-document.querySelector('#slider').addEventListener("click", function() {
+document.querySelector('#slider').addEventListener("change", function() {
 	
         var val= document.querySelector('#slider').value;
         video.volume = val / 100;
 		volume.innerHTML = (val + "%");
 		console.log(video.volume);
+
 	
 });	
 
